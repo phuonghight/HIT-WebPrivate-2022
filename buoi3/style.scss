@@ -1,0 +1,89 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  li {
+    list-style: none;
+  }
+  body {
+    background: linear-gradient(60deg, #c1ffeb, #ffbbff);
+    background-size: 400%;
+    animation: gradient 5s infinite;
+    .navbar {
+      display: flex;
+      background-color: rgb(0, 255, 255);
+      justify-content: space-around;
+      .item {
+        padding: 10px 20px;
+        cursor: pointer;
+        &:hover {
+          background-color: white;
+        }
+      }
+      .menu2 {
+        position: relative;
+        .navbar_2 {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background-color: rgb(243, 255, 199);
+          display: none;
+          .item_2 {
+            padding: 5px 20px;
+            &:hover {
+              background-color: white;
+            }
+          }
+        }
+        &:hover {
+          .navbar_2 {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+  .rectangle {
+    height: 300px;
+    width: 500px;
+    background-color: red;
+    position: relative;
+    .square {
+      height: 200px;
+      width: 200px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: orange;
+      position: absolute;
+      .circle {
+        height: 100px;
+        width: 100px;
+        background-color: aqua;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        position: absolute;
+      }
+    }
+    .star {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 180px;
+      color: yellow;
+      position: absolute;
+    }
+  }
+}
+
+@keyframes gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}

@@ -24,8 +24,11 @@
 .pink {
   background-color: pink;
   height: 40px;
+  border: 2px solid white;
 }
-
+* {
+  box-sizing: border-box;
+}
 main,
 .left_foot {
   display: flex;
@@ -41,24 +44,43 @@ main,
 .left_head {
   width: 100%;
   height: 300px;
-  background-color: #3fd6a7;
+  /* background-color: #3fd6a7; */
+  background: linear-gradient(60deg, #3fd6a7, #ff26ff);
+  background-size: 400%;
+  animation: gradient 2s infinite;
+  border: 2px solid white;
+}
+@keyframes gradient {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 .red {
   width: 100%;
   height: 130px;
   background: red;
+  border: 2px solid white;
 }
 .orange {
   background: orange;
   width: 100%;
+  border: 2px solid white;
+
   height: 170px;
 }
 .left_right {
   background-color: #ff26ff;
   width: 100%;
-  height: 300px;
+  height: 100%;
+  border: 2px solid white;
 }
-
+.left_foot {
+  height: 50%;
+}
 .right2,
 .right4 {
   width: 100%;
@@ -66,6 +88,7 @@ main,
 }
 .right2 {
   background-color: yellow;
+  border: 2px solid white;
 }
 .right3 {
   /* height: 60%; */
@@ -75,6 +98,7 @@ main,
 }
 .right4 {
   background: #ce9c5d;
+  border: 2px solid white;
 }
 .right1 {
   display: flex;
@@ -84,24 +108,29 @@ main,
   width: 80%;
   height: 100%;
   background: #86157f;
+  border: 2px solid white;
 }
 .tim2 {
   width: 20%;
   height: 100%;
   background: green;
+  border: 2px solid white;
 }
 .a {
   width: 100%;
   height: 100%;
+  border: 2px solid white;
   background: #007383;
 }
 .b {
   width: 100%;
   height: 100%;
+  border: 2px solid white;
   background: red;
 }
 footer {
   background: #000;
+  border: 2px solid white;
   width: 100%;
   height: 60px;
 }

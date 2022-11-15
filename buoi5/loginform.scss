@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(45deg, #cafcff, #f04dff, #cafcff);
+  background-size: 400%;
+  animation: gradient 5s linear infinite alternate-reverse;
+  position: relative;
+  @keyframes gradient {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  #form {
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    flex-direction: column;
+    padding: 40px 50px;
+    width: 25%;
+    border-radius: 10px;
+    .heading {
+      font-size: 30px;
+      text-align: center;
+    }
+    .form_group {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+      label {
+        font-size: 20px;
+      }
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 10px 0 10px 20px;
+        position: relative;
+        // &::before {
+        //   content: "";
+        //   height: 1px;
+        //   width: 100%;
+        //   background-color: #d7d7d7;
+        //   position: absolute;
+        //   top: 100%;
+        // }
+      }
+    }
+    .forgot {
+      a {
+        color: black;
+      }
+    }
+    .button {
+      border: none;
+      color: white;
+      border-radius: 500px;
+      padding: 10px 0;
+      background: linear-gradient(90deg, #61d8de, #d22fe2);
+      cursor: pointer;
+      margin: 50px 0;
+    }
+    .orsignup {
+      text-align: center;
+    }
+    .form_icon {
+      text-align: center;
+      margin: 20px 0 100px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .fa-facebook {
+        color: rgb(65, 89, 149);
+        font-size: 40px;
+        margin: 0 5px;
+      }
+      .fa-twitter {
+        background-color: #4a9fec;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 50%;
+        margin: 0 5px;
+      }
+      .fa-google {
+        background-color: #d94c3f;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 50%;
+        margin: 0 5px;
+      }
+      .fa-brands {
+        cursor: pointer;
+      }
+    }
+    .signup {
+      text-align: center;
+      margin: 20px 0;
+    }
+  }
+}

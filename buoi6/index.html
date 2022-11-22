@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <div class="navigation">
+        <div class="container d-flex justify-content-berween">
+            <a href="#">
+                <div class="logo light-text-color">Start Bootstrap</div>
+            </a>
+
+            <ul class="navbar__list d-flex">
+                <li class="nav__item"><a href="#about" class="nav__link light-text-color">About</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link light-text-color">Services</a></li>
+                <li class="nav__item"><a href="#portfolio" class="nav__link light-text-color">Portfolio</a></li>
+                <li class="nav__item"><a href="#contact" class="nav__link light-text-color">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- NAVIGATION IN TABLET AND MOBILE -->
+    <div class="navigation--mobile">
+        <div class="container d-flex justify-content-berween">
+            <a href="#">
+                <div class="logo">Start Bootstrap</div>
+            </a>
+
+            <button class="nav--btn"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <ul class="navbar__list">
+            <li class="nav__item"><a href="#about" class="nav__link text-color">About</a></li>
+            <li class="nav__item"><a href="#services" class="nav__link text-color">Services</a></li>
+            <li class="nav__item"><a href="#portfolio" class="nav__link text-color">Portfolio</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link text-color">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header center-col">
+        <div class="header__wraper center-col">
+            <div class="header__heading text-color">Your Favorite Place for Free Bootstrap Themes</div>
+            <div class="o-hightlight"></div>
+            <div class="header__tittle light-text-color">
+                Start Bootstrap can help you build better websites using the Bootstrap framework! Just download a theme
+                and
+                start customizing, no strings attached!
+            </div>
+            <a href="#about" class="header--btn white-text-color">FIND OUT MORE</a>
+        </div>
+    </header>
+
+    <!-- SECTION 1 ABOUT -->
+    <section class="about center-col" id="about">
+        <div class="about__wraper center-col">
+            <div class="section__heading  white-text-color">We've got what you need!</div>
+            <div class="w-hightlight"></div>
+            <div class="section__tittle light-text-color">Start Bootstrap has everything you need to get your new
+                website up
+                and
+                running in
+                no time! Choose one of our open source, free to download, and easy to use themes! No strings attached!
+            </div>
+            <a href="#services" class="section__link">GET STARTED!</a>
+        </div>
+    </section>
+
+    <!-- SECTION 2 SERVICES -->
+    <section class="services container center-col" id="services">
+        <div class="section__heading">At Your Service</div>
+        <div class="o-hightlight"></div>
+        <div class="services__features justify-content-berween">
+            <div class="feature__item center-col">
+                <div class="feature__item__icon"><i class="fa-regular fa-gem"></i></div>
+                <div class="feature__item__heading">Sturdy Themes</div>
+                <div class="feature__item__tittle">Our themes are updated regularly to keep them bug free!</div>
+            </div>
+
+            <div class="feature__item center-col">
+                <div class="feature__item__icon"><i class="fa-solid fa-laptop"></i></div>
+                <div class="feature__item__heading">Up to Date</div>
+                <div class="feature__item__tittle">All dependencies are kept current to keep things fresh.</div>
+            </div>
+
+            <div class="feature__item center-col">
+                <div class="feature__item__icon"><i class="fa-solid fa-globe"></i></div>
+                <div class="feature__item__heading">Ready to Publish</div>
+                <div class="feature__item__tittle">You can use this design as is, or you can make changes!</div>
+            </div>
+
+            <div class="feature__item center-col">
+                <div class="feature__item__icon"><i class="fa-regular fa-heart"></i></div>
+                <div class="feature__item__heading">Made with Love</div>
+                <div class="feature__item__tittle">Is it really open source if it's not made with love?</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 PORFOLIO -->
+    <section id="portfolio">
+        <!-- CATEGORY -->
+        <div class="category flex-wrap">
+            <div class="category__item">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/1.jpg"
+                    alt="" class="category__img">
+                <div class="category-box-caption center-col">
+                    <div class="category-name text-color">CATEGORY</div>
+                    <div class="project-name white-text-color">Project Name</div>
+                </div>
+            </div>
+
+            <div class="category__item">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/thumbnails/2.jpg"
+                    alt="" class="category__img">
+                <div class="category-box-caption center-col">
+                    <div class="category-name text-color">CATEGORY</div>
+                    <div class="project-name white-text-color">Project Name</div>
+                </div>
+            </div>
+
+            <div class="category__item">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/3.jpg"
+                    alt="" class="category__img">
+                <div class="category-box-caption center-col">
+                    <div class="category-name text-color">CATEGORY</div>
+                    <div class="project-name white-text-color">Project Name</div>
+                </div>
+            </div>
+
+            <div class="category__item">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/4.jpg"
+                    alt="" class="category__img">
+                <div class="category-box-caption center-col">
+                    <div class="category-name text-color">CATEGORY</div>
+                    <div class="project-name white-text-color">Project Name</div>
+                </div>
+            </div>
+
+            <div class="category__item">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/5.jpg"
+                    alt="" class="category__img">
+                <div class="category-box-caption center-col">
+                    <div class="category-name text-color">CATEGORY</div>
+                    <div class="project-name white-text-color">Project Name</div>
+                </div>
+            </div>
+
+            <div class="category__item">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/6.jpg"
+                    alt="" class="category__img">
+                <div class="category-box-caption center-col">
+                    <div class="category-name text-color">CATEGORY</div>
+                    <div class="project-name white-text-color">Project Name</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="download center-col">
+            <div class="section__heading white-text-color">Free Download at Start Bootstrap!</div>
+            <a href="#" class="section__link">DOWNLOAD NOW!</a>
+        </div>
+    </section>
+
+    <!-- SECTION 4 CONTACT -->
+    <section id="contact" class="center-col">
+        <div class="section__heading">Let's Get In Touch!</div>
+        <div class="o-hightlight"></div>
+        <div class="section__tittle text-color">Ready to start your next project with us? Send us a messages and we will
+            get
+            back
+            to you as soon as possible!</div>
+
+        <!-- CONTACT FORM -->
+        <form class="contact__form center-col">
+            <div class="form__group">
+                <input type="text" id="name" placeholder="Enter your first name">
+                <label for="name" class="fullname">Full name</label>
+                <div class="message" data-required="A name is required."></div>
+            </div>
+
+            <div class="form__group">
+                <input type="email" id="email" placeholder="Enter your email">
+                <label for="email" class="emailaddress">Email address</label>
+                <div class="message" data-invalid="Email is not valid."></div>
+            </div>
+
+            <div class="form__group">
+                <input type="text" id="phone" placeholder="Enter your number phone">
+                <label for="phone" class="phonenumber">Phone number</label>
+                <div class="message" data-required="A phone number is required."></div>
+            </div>
+
+            <div class="form__group">
+                <!-- <textarea type="text" id="message" placeholder="Message"> -->
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter yor message"></textarea>
+                <label for="message">Message</label>
+            </div>
+
+            <button class="submit-form--btn section__link" type="submit">SUMBMIT</button>
+        </form>
+
+        <div class="contact__phone center-col">
+            <div class="mobile__icon">
+
+            </div>
+            <span>+1 (555) 123-4567</span>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="section__tittle text-color">Copyright © 2022 - Company Name</div>
+    </footer>
+
+    <!-- OVERLAY -->
+    <!-- <div class="overlay"></div> -->
+
+    <!-- CATEGORY DETAIL -->
+    <div class="overlay center-col hide">
+        <div class="category__detail">
+            <div class="category__detail__content">
+                <button class="close-category__detail">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/1.jpg"
+                    alt="" class="category__detail__content__img">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/2.jpg"
+                    alt="" class="category__detail__content__img">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/3.jpg"
+                    alt="" class="category__detail__content__img">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/4.jpg"
+                    alt="" class="category__detail__content__img">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/5.jpg"
+                    alt="" class="category__detail__content__img">
+                <img src="https://startbootstrap.github.io/startbootstrap-creative/assets/img/portfolio/fullsize/6.jpg"
+                    alt="" class="category__detail__content__img">
+
+            </div>
+            <div class="category__detail__control">
+                <button class="prev-category__detail">
+                    <i class="fa-solid fa-caret-left"></i>
+                </button>
+                <button class="next-category__detail">
+                    <i class="fa-solid fa-caret-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

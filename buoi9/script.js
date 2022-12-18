@@ -23,7 +23,7 @@ setInterval(() => {
 
 import isPrime from "./bai1.js";
 import { output } from "./bai2.js";
-import { addCourse, getFirstElement } from "./bai3.js";
+import { addCourse, getFirstElement, joinArr } from "./bai3.js";
 
 // Bai1
 console.log(isPrime(7)); //output: true;
@@ -39,3 +39,9 @@ console.log(courses); //output: [ 'C++', 'Java', 'Javascript', 'Go' ]
 
 var firstElement = getFirstElement(courses);
 console.log(firstElement); //output: C++;
+
+var result1 = joinArr(courses, ",");
+var result2 = joinArr(courses, " * ");
+
+console.log(result1); //output: C++,Java,Javascript,Go
+console.log(result2); //output: C++ * Java * Javascript * Go

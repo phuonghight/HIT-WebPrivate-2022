@@ -26,4 +26,8 @@ function getFirstElement(arr) {
   return arr.shift();
 }
 
-export { addCourse, getFirstElement };
+function joinArr(arr, string) {
+  return arr.join(string);
+}
+
+export { addCourse, getFirstElement, joinArr };

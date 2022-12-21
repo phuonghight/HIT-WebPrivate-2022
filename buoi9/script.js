@@ -60,10 +60,11 @@ console.log(count(11111112));
 console.log(count(22222222));
 
 // bai 5
-import { strToArr, getUpperStr, getLowerStr } from "./bai5.js";
+import { strToArr, getStr, getUpperStr, getLowerStr } from "./bai5.js";
 
 console.log("Bai 5");
 console.log(strToArr(", "));
+console.log(getStr()); //output: Cương
 console.log(getUpperStr()); //output : DINH TAN HUNG
 console.log(getLowerStr()); //output : dinh tan hung
 

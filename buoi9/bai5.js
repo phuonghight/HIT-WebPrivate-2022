@@ -5,7 +5,9 @@ function strToArr(key) {
 }
 
 // viết hàm getStr lấy ra tên trong chuỗi str1
-function getStr(str = str1) {}
+function getStr(str = str1) {
+  return strToArr(", ")[1];
+}
 
 //từ chuỗi str2 viết hàm getUpperStr và getLowerStr lấy ra chuỗi viết hoa và viết thường
 var str2 = "    Dinh Tan Hung      ";
@@ -16,4 +18,4 @@ function getLowerStr(str = str2) {
   return str.trim().toLowerCase();
 }
 
-export { strToArr, getUpperStr, getLowerStr };
+export { strToArr, getStr, getUpperStr, getLowerStr };
